@@ -5,9 +5,8 @@
 # CF-Workers-and-Snip-VLESS
 
 **中文** | [English](README_EN.md)
-
-Telegram交流反馈群组: https://t.me/eooceu
-
+在原作基础上添加优选域名ip.sb, visa.com
+uuid 生成器：https://www.uuidgenerator.net/version4
 基于 Cloudflare Workers 的高性能 VLESS 代理服务
 
 </div>
