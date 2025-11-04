@@ -5,7 +5,7 @@ let yourUUID = '93bf61d9-3796-44c2-9b3a-49210ece2585';  // UUID
 
 // CDN
 let cfip = [
-   'ip.sb','visa.com', 'mfa.gov.ua', 'saas.sin.fan', 'store.ubi.com', 'cf.130519.xyz', 'cf.008500.xyz',
+    'ip.sb', 'visa.com', 'mfa.gov.ua', 'saas.sin.fan', 'store.ubi.com', 'cf.130519.xyz', 'cf.008500.xyz',
     'cf.090227.xyz', 'cf.877774.xyz', 'cdns.doon.eu.org', 'sub.danfeng.eu.org', 'cf.zhetengsha.eu.org'
 ];  // 在此感谢各位大佬维护的优选域名
 
@@ -494,7 +494,7 @@ export default {
                     const currentDomain = url.hostname;
                     const header = 'v' + 'l' + 'e' + 's' + 's';
                     const nodeLinks = cfip.map(cdn => {
-                        return `${header}://${yourUUID}@${cdn}:443?encryption=none&security=tls&sni=${currentDomain}&fp=firefox&allowInsecure=1&type=ws&host=${currentDomain}&path=%2F%3Fed%3D2560#Snippets-${header}`;
+                        return `${header}://${yourUUID}@${cdn}:443?encryption=none&security=tls&sni=${currentDomain}&fp=firefox&allowInsecure=1&type=ws&host=${currentDomain}&path=%2F%3Fed%3D2560#${cdn}`;
                     });
 
                     const linksText = nodeLinks.join('\n');
